@@ -14,11 +14,11 @@ namespace Accounting.DataLayer.EF_Model
     
     public partial class Account
     {
-        public int TypeID { get; set; }
-        public int CustomerID { get; set; }
+        public Nullable<int> TypeID { get; set; }
+        public Nullable<int> CustomerID { get; set; }
         public int ID { get; set; }
-        public int Amount { get; set; }
-        public System.DateTime DateTime { get; set; }
+        public Nullable<int> Amount { get; set; }
+        public Nullable<System.DateTime> DateTime { get; set; }
         public string Description { get; set; }
     
         public virtual AccountingType AccountingType { get; set; }

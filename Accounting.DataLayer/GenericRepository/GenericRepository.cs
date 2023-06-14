@@ -17,7 +17,7 @@ namespace Accounting.DataLayer.GenericRepository
         public GenericRepository(Accounting_DBEntities db)
         {
             this._connection = db;
-            _tableName = _connection.Set<TEntity>();// متصل کردن جدول به اینتیتی
+            _tableName = _connection.Set<TEntity>();// cmake connection between table and entity
         }
         public virtual TEntity GetByID(object ID)
         {

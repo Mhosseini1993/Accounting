@@ -19,8 +19,8 @@ namespace Accounting.BusinessLayer
 
             using (UnitOfwork unit = new UnitOfwork())
             {
-                Result.Get = unit.AccountRepository.GetAll(t => t.TypeID == 1 && (t.DateTime >= start && t.DateTime <= End)).Select(t => t.Amount).Sum();
-                Result.Pay = unit.AccountRepository.GetAll(t => t.TypeID == 2 && (t.DateTime >= start && t.DateTime <= End)).Select(t => t.Amount).Sum();
+                Result.Get =(int) unit.AccountRepository.GetAll(t => t.TypeID == 1 && (t.DateTime >= start && t.DateTime <= End)).Select(t => t.Amount).Sum();
+                Result.Pay =(int) unit.AccountRepository.GetAll(t => t.TypeID == 2 && (t.DateTime >= start && t.DateTime <= End)).Select(t => t.Amount).Sum();
                 Result.Remain = Result.Get - Result.Pay;
 
             }

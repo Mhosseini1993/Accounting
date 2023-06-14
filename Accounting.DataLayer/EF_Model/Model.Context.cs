@@ -25,9 +25,9 @@ namespace Accounting.DataLayer.EF_Model
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Account> Account { get; set; }
+        public virtual DbSet<AccountingType> AccountingType { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<AccountingType> AccountingTypes { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

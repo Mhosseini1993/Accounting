@@ -46,7 +46,7 @@ namespace Accounting.UI.Forms
 
                         txtAmount.Text = account.Amount.ToString();
 
-                        lblDateTime.Text = account.DateTime.ToShamsi();
+                        lblDateTime.Text = account.DateTime.Value.ToShamsi();
 
                         txtDesc.Text = account.Description;
                     }//if

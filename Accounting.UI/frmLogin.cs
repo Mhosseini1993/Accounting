@@ -26,7 +26,8 @@ namespace Accounting.UI
             {
                 using (UnitOfwork unit = new UnitOfwork())
                 {
-                    var IsExist = unit.UserRepository.GetAll(u => u.UserNaame == txtUserName.Text && u.PassWord == txtPass.Text).Any();
+                    var IsExist = unit.UserRepository
+                        .GetAll(u => u.UserNaame == txtUserName.Text && u.PassWord == txtPass.Text).Any();
 
                     if (IsExist)
                     {

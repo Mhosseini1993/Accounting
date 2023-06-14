@@ -17,7 +17,7 @@ namespace Accounting.DataLayer.EF_Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Customer()
         {
-            this.Accounts = new HashSet<Account>();
+            this.Account = new HashSet<Account>();
         }
     
         public int ID { get; set; }
@@ -28,6 +28,6 @@ namespace Accounting.DataLayer.EF_Model
         public string ImageName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Account> Accounts { get; set; }
+        public virtual ICollection<Account> Account { get; set; }
     }
 }
