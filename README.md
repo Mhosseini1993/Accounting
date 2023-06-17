@@ -2,11 +2,20 @@
 
 This a windows form application that developed with C# and .Net Framework for managing personal accounting.
 
+<br/>
+<hr/>
 #Architecture
- .3-Layer Included
-     UI layer
-     Business Layer
-     Data Access Layer
+<br/>
+ 3-Layer Included
+ <br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;UI layer
+     <br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;Business Layer
+     <br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;Data Access Layer
+     <br/>
+     <br/>
 #ORM
- Entity Framework (Data Base First).
+<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;Entity Framework (Data Base First)
  
